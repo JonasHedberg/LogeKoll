@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a234a">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="description" content="Integritetspolicy för LogeKoll version 1.0.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:title" content="Integritetspolicy – LogeKoll">
+  <meta property="og:description" content="Så hanterar LogeKoll plats, lokala inställningar, databasfiler och systemfunktioner.">
+  <meta property="og:image" content="assets/app-icon-1024.png">
+  <title>Integritetspolicy – LogeKoll</title>
+</head>
+<body>
+<a class="skip-link" href="#content">Hoppa till innehållet</a>
+<header class="site-header">
+  <nav class="nav" aria-label="Huvudnavigering">
+    <a class="brand" href="index.html"><img src="assets/favicon-64.png" alt=""><span>LogeKoll</span></a>
+    <div class="nav-links">
+      <a href="index.html">Start</a>
+      <a href="index.html#funktioner">Funktioner</a>
+      <a href="integritet.html" aria-current="page">Integritet</a>
+      <a href="support.html">Support</a>
+    </div>
+  </nav>
+</header>
+<main id="content">
+  <header class="page-head">
+    <p class="eyebrow">LogeKoll version 1.0</p>
+    <h1>Integritetspolicy</h1>
+    <p>Senast uppdaterad den 6 augusti 2026. Policyn beskriver hur LogeKoll hanterar uppgifter på iPhone och vid hämtning av den offentliga databasen.</p>
+  </header>
+
+  <article class="prose">
+    <section class="notice"><h2>Sammanfattning</h2><p>LogeKoll kräver inget konto, visar inga annonser och använder ingen analys eller beteendespårning. Hemmaloge och cache sparas lokalt. Plats används endast när du väljer funktionen Nära dig. Appen skickar inte din exakta position till utvecklaren.</p></section>
+
+    <section><h2>1. Personuppgiftsansvarig och kontakt</h2><p>LogeKoll utvecklas av Jonas Hedberg. Frågor om integritet kan lämnas genom <a href="https://github.com/JonasHedberg/LogeKoll/issues/new">projektets ärendeformulär på GitHub</a>. Skicka inte känsliga personuppgifter i ett offentligt ärende.</p></section>
+
+    <section><h2>2. Uppgifter som appen hanterar</h2><p>Appen kan hantera följande information på enheten:</p><ul><li>vilken institution du har valt som hemmaloge,</li><li>appens lokala inställningar,</li><li>den hämtade institutions- och mötesdatabasen,</li><li>teknisk cacheinformation, exempelvis när databasen senast uppdaterades,</li><li>temporär eller lokalt cachad kartposition för institutioners offentliga adresser,</li><li>telefonens aktuella position när du uttryckligen använder Nära dig.</li></ul></section>
+
+    <section><h2>3. Hemmaloge och målgruppsfilter</h2><p>Valet av hemmaloge sparas i appens privata lagringsutrymme på telefonen. Valet används för att visa kommande möten och för att begränsa sökresultaten till samma målgrupp. Uppgiften skickas inte till utvecklaren.</p></section>
+
+    <section><h2>4. Platsåtkomst</h2><p>Platsåtkomst begärs först när du använder funktionen Nära dig. Positionen används för att beräkna avstånd till institutioner och sortera listan. LogeKoll skickar inte den exakta enhetspositionen till utvecklarens server och skapar ingen rörelsehistorik.</p><p>Du kan neka eller återkalla åtkomsten under <em>Inställningar → Integritet och säkerhet → Platstjänster → LogeKoll</em>. Övriga sökfunktioner fungerar utan platsåtkomst.</p></section>
+
+    <section><h2>5. Hämtning av databasen</h2><p>LogeKoll hämtar en JSON-databas från en fast HTTPS-adress. Vid en normal webbförfrågan kan webbhotellet eller nätverksleverantören behandla tekniska uppgifter såsom IP-adress, tidpunkt, begärd fil och användaragent. LogeKoll använder inte dessa uppgifter för profilering, annonser eller analys.</p><p>Den senaste användbara databasen sparas lokalt så att appen kan fortsätta visa information när nätverket inte är tillgängligt.</p></section>
+
+    <section><h2>6. Offentlig institutionsinformation</h2><p>Databasen innehåller offentligt publicerad information om institutioner och möten, exempelvis namn, benämning, distrikt, säte, län, kontaktuppgifter, besöksadress och mötestider. Appen är inte avsedd för privata medlemsregister eller känsliga medlemsuppgifter.</p></section>
+
+    <section><h2>7. Telefon, e-post och Apple Kartor</h2><p>När du trycker på ett telefonnummer begär appen bekräftelse innan iOS öppnar telefonfunktionen. När du trycker på en e-postadress öppnas ett nytt meddelande. När du trycker på en adress öppnas Apple Kartor. Dessa systemtjänster hanteras enligt Apples villkor och integritetspolicy. LogeKoll registrerar inte om du ringer, skickar eller navigerar.</p></section>
+
+    <section><h2>8. Ingen annonsering, analys eller spårning</h2><p>Version 1.0 innehåller inga annonsnätverk, analysverktyg, spårnings-SDK:er, konto- eller inloggningsfunktioner. Appen säljer inte användardata och använder inte uppgifter för riktad marknadsföring.</p></section>
+
+    <section><h2>9. Lokal lagring och gallring</h2><p>Inställningar och cache finns kvar tills de ersätts, du ändrar inställningarna eller appen avinstalleras. Databasen uppdateras när en ny användbar version hämtas. Passerade möten kan tas bort när databasen produceras eller uppdateras.</p></section>
+
+    <section><h2>10. Säkerhet</h2><p>Appens lokala data ligger i dess privata lagringsutrymme. Du ansvarar för telefonens lösenkod, iOS-uppdateringar, säkerhetskopiering och övriga enhetsinställningar. Ingen internetöverföring kan garanteras vara helt riskfri, även när HTTPS används.</p></section>
+
+    <section><h2>11. Barns integritet</h2><p>Appen kräver inget konto och är inte utformad för att samla in uppgifter om barn. Funktionerna behandlar endast de lokala inställningar och den platsinformation som beskrivs ovan.</p></section>
+
+    <section><h2>12. Ändringar</h2><p>Policyn kan uppdateras om appens funktioner, datakälla eller behandlingssätt ändras. Datumet högst upp visar när den aktuella versionen senast uppdaterades.</p></section>
+  </article>
+</main>
+<footer>
+  <div class="footer-inner">
+    <div>© 2026 Jonas Hedberg · LogeKoll · Version 1.0</div>
+    <div class="footer-links">
+      <a href="integritet.html">Integritetspolicy</a>
+      <a href="support.html">Support</a>
+      <a href="https://github.com/JonasHedberg/LogeKoll/issues/new">Rapportera ett problem</a>
+    </div>
+  </div>
+  <p class="disclaimer">LogeKoll är ett fristående informationsverktyg och är inte en officiell app från Odd Fellow Orden.</p>
+</footer>
+</body>
+</html>
