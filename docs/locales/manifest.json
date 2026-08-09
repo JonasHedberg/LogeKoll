@@ -1,0 +1,11 @@
+{
+  "default": "sv",
+  "locales": [
+    {
+      "code": "sv",
+      "label": "Svenska",
+      "file": "sv.json"
+    }
+  ],
+  "instructions": "Lägg till en ny JSON-fil och en post i locales för att aktivera fler språk. Svenska är enda publicerade språk i version 1.0."
+}

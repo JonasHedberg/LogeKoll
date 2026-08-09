@@ -1,25 +1,22 @@
 {
   "name": "LogeKoll",
   "short_name": "LogeKoll",
+  "lang": "sv",
   "description": "Möten och information om svenska Odd Fellow-loger och läger.",
-  "lang": "sv-SE",
   "start_url": "./",
-  "scope": "./",
   "display": "standalone",
   "background_color": "#fffdf7",
-  "theme_color": "#0a234a",
+  "theme_color": "#76102b",
   "icons": [
     {
       "src": "assets/icon-192.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
+      "type": "image/png"
     },
     {
       "src": "assets/icon-512.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
+      "type": "image/png"
     }
   ]
 }

@@ -1,100 +1,19 @@
-<!doctype html>
-<html lang="sv">
-<head>
+<!doctype html><html lang="sv"><head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0a234a">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <link rel="stylesheet" href="assets/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
   <link rel="manifest" href="site.webmanifest">
-  <meta name="description" content="Support och vanliga frågor för LogeKoll version 1.0.">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="sv_SE">
-  <meta property="og:title" content="Support – LogeKoll">
-  <meta property="og:description" content="Hjälp med hemmaloge, mötessökning, position, kontaktuppgifter och databasuppdateringar.">
-  <meta property="og:image" content="assets/app-icon-1024.png">
-  <title>Support – LogeKoll</title>
-</head>
-<body>
-<a class="skip-link" href="#content">Hoppa till innehållet</a>
-<header class="site-header">
-  <nav class="nav" aria-label="Huvudnavigering">
-    <a class="brand" href="index.html"><img src="assets/favicon-64.png" alt=""><span>LogeKoll</span></a>
-    <div class="nav-links">
-      <a href="index.html">Start</a>
-      <a href="index.html#funktioner">Funktioner</a>
-      <a href="integritet.html">Integritet</a>
-      <a href="support.html" aria-current="page">Support</a>
-    </div>
-  </nav>
-</header>
-<main id="content">
-  <header class="page-head">
-    <p class="eyebrow">LogeKoll version 1.0</p>
-    <h1>Support</h1>
-    <p>Hjälp med hemmaloge, mötessökning, närliggande loger, kontaktfunktioner och databasuppdateringar.</p>
-  </header>
-
-  <section class="card contact-card">
-    <div>
-      <span class="status-chip"><span class="status-dot"></span>Support för version 1.0</span>
-      <h2>Kontakta supporten</h2>
-      <p>Beskriv problemet och ange gärna iPhone-modell, iOS-version, appversion och vad du gjorde när problemet uppstod. Skicka inte medlemsuppgifter eller annan känslig information.</p>
-      <p class="contact-address"><a href="https://github.com/JonasHedberg/LogeKoll/issues/new">Öppna ett supportärende på GitHub</a></p>
-    </div>
-    <a class="button primary" href="https://github.com/JonasHedberg/LogeKoll/issues/new">Skapa supportärende</a>
-  </section>
-
-  <section class="faq" aria-label="Vanliga frågor" style="margin-top:30px">
-    <h2>Vanliga frågor</h2>
-
-    <details><summary>Hur väljer jag min hemmaloge?</summary><div>Öppna Inställningar från huvudsidan och välj din loge eller ditt läger. Valet sparas lokalt på telefonen. Huvudsidan visar därefter kommande möten för den valda institutionen.</div></details>
-
-    <details><summary>Varför måste jag välja en hemmaloge?</summary><div>Hemmalogen styr både vad som visas på huvudsidan och vilket målgruppsfilter som används i sökningen. Appen visar alltid institutioner för samma målgrupp som hemmalogen.</div></details>
-
-    <details><summary>Varför visas inte alla loger i sökresultatet?</summary><div>Sökningen filtrerar alltid efter hemmalogens målgrupp. Om hemmalogen är en Brödraloge eller ett Brödraläger visas institutioner för män. Om hemmalogen är en Rebeckaloge eller ett Rebeckaläger visas institutioner för kvinnor.</div></details>
-
-    <details><summary>Hur söker jag efter loger i ett län eller en ort?</summary><div>Öppna Sök från huvudsidan. Landet är Sverige. Välj sedan län för att direkt se alla matchande institutioner i länet. Du kan därefter begränsa resultatet ytterligare genom att välja ort.</div></details>
-
-    <details><summary>Hur fungerar sökningen nära mig?</summary><div>Välj närhetssökning och tillåt platsåtkomst när iOS frågar. Appen använder telefonens aktuella position för att beräkna ungefärligt avstånd och sortera resultatet från närmast till längst bort.</div></details>
-
-    <details><summary>Vad betyder mötesmarkeringarna i närhetslistan?</summary><div>En markering visar om institutionen har ett möte idag. En separat markering visar om den har ett möte någon gång under innevarande kalendervecka. En institution kan ha båda markeringarna.</div></details>
-
-    <details><summary>Kan jag använda appen utan platsåtkomst?</summary><div>Ja. Hemmaloge, läns- och ortssökning, logedetaljer och möten fungerar utan platsåtkomst. Endast funktionen Nära dig kräver telefonens position.</div></details>
-
-    <details><summary>Varför visas inget avstånd?</summary><div>Kontrollera att Platstjänster är aktiverade för LogeKoll och att appen har tillgång till din position. Avstånd kan även saknas om institutionens adress inte kan omvandlas till en kartposition.</div></details>
-
-    <details><summary>Hur ringer jag en loge?</summary><div>Tryck på ett telefonnummer på institutionens detaljsida. Appen visar först en bekräftelse. Samtalet startas först när du godkänner.</div></details>
-
-    <details><summary>Hur skickar jag e-post?</summary><div>Tryck på e-postadressen. Appen öppnar ett nytt meddelande med mottagaradressen ifylld. Du granskar och skickar meddelandet själv.</div></details>
-
-    <details><summary>Hur öppnar jag besöksadressen i Kartor?</summary><div>Tryck på besöksadressen på detaljsidan. Apple Kartor öppnas med den angivna adressen markerad.</div></details>
-
-    <details><summary>Varför är mötesinformationen inte uppdaterad?</summary><div>Appen försöker hämta den senaste databasen från internet och använder annars en lokalt sparad kopia. Kontrollera internetanslutningen och försök igen senare. Mötesuppgifter kan också ändras hos den berörda institutionen efter att databasen uppdaterades.</div></details>
-
-    <details><summary>Varför saknas en loge eller ett möte?</summary><div>Databasen bygger på offentligt tillgängliga uppgifter. En institution kan sakna publicerad information, ha bytt adress eller ännu inte ha lagt ut kommande möten. Rapportera gärna ett tydligt fel via supportlänken.</div></details>
-
-    <details><summary>Är LogeKoll en officiell Odd Fellow-app?</summary><div>Nej. LogeKoll är ett fristående informationsverktyg och är inte utvecklat eller publicerat av Odd Fellow Orden.</div></details>
-
-    <details><summary>Vilka enheter stöds?</summary><div>Version 1.0 är endast avsedd för iPhone och kräver den iOS-version som anges på appens produktsida.</div></details>
-  </section>
-
-  <section class="prose" style="margin-top:30px">
-    <section class="warning"><h2>Innan du rapporterar ett datafel</h2><p>Ange institutionens namn eller ID, vilket fält som är fel och vilken offentlig källa som visar den korrekta uppgiften. Publicera inte privata medlemsuppgifter.</p></section>
-  </section>
-</main>
-<footer>
-  <div class="footer-inner">
-    <div>© 2026 Jonas Hedberg · LogeKoll · Version 1.0</div>
-    <div class="footer-links">
-      <a href="integritet.html">Integritetspolicy</a>
-      <a href="support.html">Support</a>
-      <a href="https://github.com/JonasHedberg/LogeKoll/issues/new">Rapportera ett problem</a>
-    </div>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/i18n.js" defer></script>
+<meta name="description" content="Svensk support för LogeKoll version 1.0."><title>Support – LogeKoll</title></head><body><a class="skip-link" href="#innehall" data-i18n="common.skip">Hoppa till innehållet</a>
+<header class="site-header"><nav class="nav" aria-label="Huvudnavigation">
+  <a class="brand" href="index.html"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/favicon-dark-64.png"><img src="assets/favicon-64.png" alt=""></picture><span>LogeKoll</span></a>
+  <div class="nav-links">
+    <a href="index.html" data-i18n="common.home">Hem</a>
+    <a href="support.html" data-i18n="common.support">Support</a>
+    <a href="integritet.html" data-i18n="common.privacy">Integritet</a>
+    <span class="language-control" data-language-control hidden><label for="language-select" data-i18n="common.language">Språk</label><select id="language-select" data-language-select></select></span>
   </div>
-  <p class="disclaimer">LogeKoll är ett fristående informationsverktyg och är inte en officiell app från Odd Fellow Orden.</p>
-</footer>
-</body>
-</html>
+</nav></header><main id="innehall"><header class="page-head" data-i18n-html="support.head"><p class="eyebrow">LogeKoll version 1.0</p><h1>Support</h1><p>Hjälp för inställningar, sökning, möten, plats, kalender, anteckningar och databassynkning.</p></header><div class="prose"><section data-i18n-html="support.quick"><h2>Kom igång</h2><ol><li>Öppna Inställningar i LogeKoll och välj medlemstyp.</li><li>Välj Min Loge. Du kan även välja Mitt Läger.</li><li>Startsidan visar kommande möten för dina valda institutioner.</li><li>Använd sökfunktionerna för län och ort, närmaste institutioner eller möten idag och i morgon.</li></ol></section><section class="faq"><div data-i18n-html="support.faq"><h2>Vanliga frågor</h2></div><details><summary data-i18n-html="support.faq_home">Varför måste jag välja Min Loge?</summary><div>Min Loge används för att aktivera mötesvisning och som standard för relevanta sökresultat.</div></details><details data-i18n-html="support.faq_area"><summary>Hur fungerar sökning efter län och ort?</summary><div>Land är Sverige. Välj län för att direkt få ett delresultat. Därefter kan du välja ort, filtrera på Alla, Brödra eller Rebecka och söka på namn eller nummer.</div></details><details data-i18n-html="support.faq_location"><summary>Varför visas inga resultat nära mig?</summary><div>Starta platsfunktionen och ge LogeKoll platsåtkomst när appen används. Om åtkomst tidigare nekats kan behörigheten ändras i enhetens systeminställningar. Institutioner utan användbar besöksadress kan inte avståndsberäknas.</div></details><details data-i18n-html="support.faq_calendar"><summary>Hur lägger jag till ett möte i kalendern?</summary><div>Tryck på kalenderknappen för mötet och bekräfta. LogeKoll förbereder titel, tid, plats och tillgänglig mötesinformation i systemets kalenderredigerare. Du avgör själv om posten ska sparas.</div></details><details data-i18n-html="support.faq_saved"><summary>Hur fungerar Mina möten?</summary><div>På möteslistor kan du spara eller ta bort en mötesreferens. Passerade sparade möten rensas automatiskt. Funktionen lagrar inte en kopia av hela mötet som en separat användarprofil.</div></details><details data-i18n-html="support.faq_notes"><summary>Hur fungerar Mina anteckningar?</summary><div>Öppna Mina möten och välj Mina anteckningar. Anteckningen kan innehålla formaterad text, krypteras lokalt och kräver enhetens ägarautentisering för upplåsning. Den skickas inte till LogeKolls databas.</div></details><details data-i18n-html="support.faq_voice"><summary>Hur fungerar röst- och genvägssökning?</summary><div>Aktivera funktionen i Inställningar. Systemets röstassistent och genvägar kan då söka efter institutioner och kommande möten. Resultaten begränsas enligt vald medlemstyp och valda heminstitutioner.</div></details><details data-i18n-html="support.faq_sync"><summary>Vad händer om databasen inte kan synkas?</summary><div>Appen försöker använda en tidigare lokal cache. Om ingen cache finns används den databas som följer med appen. Du kan även starta en manuell synkning från Inställningar.</div></details><details data-i18n-html="support.faq_contact"><summary>Vad händer när jag trycker på telefon, e-post eller adress?</summary><div>LogeKoll lämnar den valda uppgiften till enhetens systemfunktion för samtal, e-post eller kartor. För telefonsamtal visas först en bekräftelse.</div></details></section><section id="tillganglighet" data-i18n-html="support.accessibility"><h2>Tillgänglighet</h2><p>Gränssnittet bygger huvudsakligen på systemkomponenter, stödjer dynamisk textstorlek och innehåller tillgänglighetsetiketter för centrala ikonknappar. Om du hittar ett tillgänglighetsproblem, rapportera det via supportkanalen nedan.</p></section><section class="contact-card" data-i18n-html="support.contact"><h2>Kontakt och felrapportering</h2><p>Fel, önskemål och tekniska frågor kan rapporteras i projektets ärendehantering. Lägg inte in känsliga personuppgifter, privata anteckningar eller annan sekretesskänslig information i ett offentligt ärende.</p><div class="actions"><a class="button primary" href="https://github.com/JonasHedberg/LogeKoll/issues/new" rel="noopener noreferrer">Skapa ett supportärende</a></div></section></div></main><footer><div class="footer-inner"><div><strong>LogeKoll</strong> · <span data-i18n="common.version">Version 1.0</span></div><div class="footer-links"><a href="support.html" data-i18n="common.support">Support</a><a href="integritet.html" data-i18n="common.privacy">Integritet</a></div></div><p class="disclaimer" data-i18n="common.disclaimer">LogeKoll är ett fristående informationsverktyg och inte en officiell kanal för Odd Fellow Orden. Kontrollera viktig mötesinformation mot den angivna källan.</p></footer></body></html>

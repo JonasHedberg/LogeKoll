@@ -24,7 +24,7 @@
   --focus: #2d6cdf;
   --shadow: 0 22px 55px rgba(34, 24, 15, .12);
   --radius: 22px;
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -178,3 +178,23 @@ footer { border-top: 1px solid var(--line); color: var(--muted); }
   main { max-width: none; padding: 0; }
   .prose section { box-shadow: none; break-inside: avoid; }
 }
+
+/* Tillägg för LogeKoll version 1.0 */
+address { font-style: normal; }
+.facts { margin: 0; display: grid; gap: 0; }
+.facts > div { display: grid; grid-template-columns: minmax(150px, .35fr) 1fr; gap: 18px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.facts > div:last-child { border-bottom: 0; }
+.facts dt { font-weight: 760; color: var(--heading); }
+.facts dd { margin: 0; color: var(--muted); overflow-wrap: anywhere; }
+code { font-family: ui-monospace, Menlo, Monaco, Consolas, monospace; font-size: .92em; overflow-wrap: anywhere; }
+@media (max-width: 620px) { .facts > div { grid-template-columns: 1fr; gap: 3px; } }
+
+
+/* Språkstöd: väljaren visas automatiskt när fler än ett språk aktiveras. */
+.language-control[hidden] { display: none !important; }
+.language-control { display: inline-flex; align-items: center; gap: 8px; margin-left: 6px; }
+.language-control label { font-size: .86rem; font-weight: 700; color: var(--muted); }
+.language-control select { border: 1px solid var(--line); border-radius: 999px; padding: 7px 28px 7px 10px; background: var(--surface-solid); color: var(--text); }
+.feature-list { columns: 2; column-gap: 34px; padding-left: 1.25rem; }
+.feature-list li { break-inside: avoid; margin-bottom: .55rem; }
+@media (max-width: 700px) { .feature-list { columns: 1; } }
