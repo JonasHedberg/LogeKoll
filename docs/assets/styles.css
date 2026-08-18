@@ -1,5 +1,5 @@
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
   --cream-50: #fffdf7;
   --cream-100: #f8f1df;
   --cream-200: #eadfc4;
@@ -146,30 +146,6 @@ footer { border-top: 1px solid var(--line); color: var(--muted); }
   main { padding: 34px 16px 60px; }
   .hero { padding-top: 18px; gap: 28px; }
   .card, .prose section, .notice, .warning { padding: 21px; }
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #071426;
-    --surface: rgba(14, 31, 55, .90);
-    --surface-solid: #10233e;
-    --text: #f5f1e8;
-    --muted: #bcc5d3;
-    --line: rgba(236, 203, 124, .18);
-    --heading: #fffaf0;
-    --accent: var(--gold-300);
-    --shadow: 0 22px 55px rgba(0, 0, 0, .28);
-  }
-  body {
-    background:
-      radial-gradient(circle at 92% 0%, rgba(210, 161, 58, .12), transparent 30rem),
-      radial-gradient(circle at 0% 18%, rgba(148, 27, 56, .18), transparent 34rem),
-      var(--bg);
-  }
-  .site-header { background: rgba(7, 20, 38, .86); }
-  a { color: #f0c86e; }
-  .nav-links a:hover, .nav-links a[aria-current="page"] { color: #f0c86e; background: rgba(210,161,58,.11); }
-  .button.secondary { color: var(--text); }
-  .status-chip { color: var(--text); }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 @media print {
