@@ -2,7 +2,7 @@
   "name": "LogeKoll",
   "short_name": "LogeKoll",
   "lang": "sv",
-  "description": "Möten och information om svenska Odd Fellow-loger och läger.",
+  "description": "Möten, sökning, påminnelser och information om svenska Odd Fellow-loger och läger.",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#fffdf7",

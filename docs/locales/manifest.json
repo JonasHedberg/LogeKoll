@@ -7,5 +7,5 @@
       "file": "sv.json"
     }
   ],
-  "instructions": "Lägg till en ny JSON-fil och en post i locales för att aktivera fler språk. Svenska är enda publicerade språk i version 1.0."
+  "instructions": "Lägg till en ny JSON-fil och en post i locales för att aktivera fler språk. Svenska är det enda publicerade språket i de aktuella LogeKoll-dokumenten."
 }
