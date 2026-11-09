@@ -74,12 +74,12 @@
   display: grid;
   place-items: center;
   min-width: 0;
-  height: 330px;
+  height: 390px;
 }
 .app-hero-halo {
   position: absolute;
   width: 330px;
-  height: 330px;
+  height: 390px;
   border-radius: 50%;
   background: rgba(255,255,255,.05);
   border: 1px solid rgba(242,213,163,.2);
@@ -105,7 +105,7 @@
   object-fit: cover;
 }
 .app-device img[hidden] { display: none; }
-.app-device-hero { width: 149px; transform: rotate(3deg); }
+.app-device-hero { width: 185px; transform: rotate(3deg); }
 .app-hero-caption {
   position: absolute;
   bottom: 7px;
@@ -135,16 +135,16 @@
 .app-section { margin-top: 68px; }
 .app-section-heading { max-width: 690px; margin: 0 auto 26px; text-align: center; }
 .app-section-heading > p:last-child { color: var(--muted); font-size: 1.03rem; line-height: 1.65; margin: 0; }
-.app-feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 15px; }
+.app-feature-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 18px; }
 .app-feature-card {
   display: grid;
-  grid-template-columns: minmax(0,1fr) 100px;
+  grid-template-columns: minmax(0,1fr) 150px;
   gap: 10px;
   min-width: 0;
-  min-height: 292px;
+  min-height: 338px;
   overflow: hidden;
   border-radius: 22px;
-  padding: 23px 15px 22px 22px;
+  padding: 24px 18px 24px 24px;
   background: #f5eddf;
   border: 1px solid #ece1d2;
 }
@@ -155,11 +155,11 @@
 .app-feature-card h3 { font-size: clamp(1.25rem, 2vw, 1.52rem); margin: 15px 0 12px; }
 .app-feature-card p { font-size: .9rem; line-height: 1.56; color: #444c5a; margin: 0 0 10px; }
 .app-feature-card .app-small-note { color: #656472; font-size: .82rem; margin: 0; }
-.app-device-feature { width: 96px; align-self: center; transform: none; }
+.app-device-feature { width: 144px; align-self: center; transform: none; }
 .app-feature-tinted .app-device-feature { transform: none; }
 .app-highlight {
   display: grid;
-  grid-template-columns: minmax(0,1fr) 230px;
+  grid-template-columns: minmax(0,1fr) 280px;
   gap: 30px;
   align-items: center;
   min-height: 326px;
@@ -179,7 +179,7 @@
 .app-highlight-copy > p:not(.app-eyebrow) { max-width: 670px; font-size: 1rem; line-height: 1.65; }
 .app-highlight-copy .app-small-note { font-size: .84rem !important; margin: 15px 0 0; }
 .app-highlight-media { display: grid; place-items: center; min-height: 252px; }
-.app-device-spotlight { width: 130px; transform: rotate(2deg); }
+.app-device-spotlight { width: 175px; transform: rotate(2deg); }
 .app-highlight-light .app-device-spotlight { transform: rotate(-2deg); }
 .app-keywords { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 17px; }
 .app-keywords span { font-size: .76rem; color: var(--burgundy-800); background: rgba(148,27,56,.075); border-radius: 999px; padding: 5px 10px; font-weight: 720; }
@@ -187,19 +187,19 @@
 .app-trust-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
 .app-trust-card {
   display: grid;
-  grid-template-columns: minmax(0,1fr) 104px;
+  grid-template-columns: minmax(0,1fr) 150px;
   gap: 18px;
-  min-height: 254px;
+  min-height: 300px;
   overflow: hidden;
   border-radius: 22px;
-  padding: 27px 14px 19px 27px;
+  padding: 28px 18px 22px 28px;
   background: #f5e9e7;
   border: 1px solid #eddfdf;
 }
 .app-trust-cool { background: #eaf0f4; border-color: #dfe6ed; }
 .app-trust-card h3 { font-size: 1.47rem; margin: 0 0 12px; }
 .app-trust-card p { font-size: .93rem; color: #4d5563; line-height: 1.62; margin: 0; }
-.app-device-trust { width: 95px; align-self: center; transform: none; }
+.app-device-trust { width: 138px; align-self: center; transform: none; }
 .app-trust-cool .app-device-trust { transform: none; }
 .app-trust-foot, .app-screen-footnote { color: var(--muted); font-size: .85rem; line-height: 1.55; }
 .app-trust-foot { text-align: center; margin: 17px 0 0; }
@@ -230,11 +230,11 @@
 @media (max-width: 980px) {
   .app-hero { grid-template-columns: minmax(0,1.2fr) minmax(170px,.8fr); padding-inline: 37px; }
   .app-feature-grid { grid-template-columns: 1fr; }
-  .app-feature-card { max-width: none; min-height: 229px; grid-template-columns: minmax(0,1fr) 104px; padding: 20px 16px 17px 24px; }
+  .app-feature-card { max-width: none; min-height: 229px; grid-template-columns: minmax(0,1fr) 150px; padding: 20px 16px 17px 24px; }
   .app-feature-card h3 { font-size: 1.5rem; margin-block: 9px; }
-  .app-device-feature { width: 98px; }
+  .app-device-feature { width: 126px; }
   .app-feature-copy { align-self: center; }
-  .app-trust-card { grid-template-columns: minmax(0,1fr) 95px; }
+  .app-trust-card { grid-template-columns: minmax(0,1fr) 126px; min-height: 270px; }
 }
 @media (max-width: 700px) {
   .app-page { padding: 16px 16px 55px; }
@@ -243,9 +243,9 @@
   .app-lead { font-size: .98rem; max-width: 520px; margin: 15px auto; }
   .app-version-pills, .app-hero-actions { justify-content: center; }
   .app-hero-actions { margin-top: 18px; }
-  .app-hero-visual { height: 260px; }
-  .app-hero-halo { width: 255px; height: 255px; }
-  .app-device-hero { width: 113px; }
+  .app-hero-visual { height: 300px; }
+  .app-hero-halo { width: 300px; height: 300px; }
+  .app-device-hero { width: 150px; }
   .app-hero-caption { right: 0; bottom: 4px; }
   .app-jumpnav { justify-content: flex-start; gap: 6px 16px; padding: 17px 3px; }
   .app-jumpnav span { width: 100%; }
@@ -253,13 +253,13 @@
   .app-section-heading { margin-bottom: 21px; }
   .app-section-heading h2 { font-size: 2.25rem; }
   .app-section-heading > p:last-child { font-size: .97rem; }
-  .app-highlight { grid-template-columns: minmax(0,1fr) 115px; gap: 10px; margin-top: 22px; min-height: 265px; padding: 22px 12px 22px 24px; }
+  .app-highlight { grid-template-columns: minmax(0,1fr) 145px; gap: 14px; margin-top: 22px; min-height: 280px; padding: 22px 16px 22px 24px; }
   .app-highlight h2 { font-size: 1.75rem; }
   .app-highlight-copy > p:not(.app-eyebrow) { font-size: .9rem; line-height: 1.55; }
-  .app-highlight-media { min-height: 232px; }
-  .app-device-spotlight { width: 100px; }
+  .app-highlight-media { min-height: 248px; }
+  .app-device-spotlight { width: 128px; }
   .app-trust-grid { grid-template-columns: 1fr; }
-  .app-trust-card { min-height: 224px; }
+  .app-trust-card { min-height: 250px; }
   .app-platform-grid { grid-template-columns: 1fr; }
   .app-final { flex-direction: column; align-items: flex-start; gap: 21px; padding: 27px; }
 }
@@ -269,18 +269,18 @@
   .app-hero-actions .button { padding: 9px 12px; }
   .app-hero-visual { height: 245px; }
   .app-hero-caption { font-size: .66rem; }
-  .app-feature-card { grid-template-columns: minmax(0,1fr) 90px; padding-left: 18px; padding-right: 12px; }
+  .app-feature-card { grid-template-columns: minmax(0,1fr) 110px; padding-left: 18px; padding-right: 12px; }
   .app-feature-card h3 { font-size: 1.3rem; }
   .app-feature-card p { font-size: .85rem; }
   .app-feature-card .app-small-note { font-size: .79rem; }
-  .app-device-feature { width: 86px; }
-  .app-highlight { grid-template-columns: minmax(0,1fr) 92px; padding-left: 19px; }
+  .app-device-feature { width: 102px; }
+  .app-highlight { grid-template-columns: minmax(0,1fr) 110px; padding-left: 19px; }
   .app-highlight h2 { font-size: 1.52rem; }
-  .app-device-spotlight { width: 86px; }
+  .app-device-spotlight { width: 100px; }
   .app-keywords span { font-size: .68rem; }
-  .app-trust-card { grid-template-columns: minmax(0,1fr) 82px; gap: 8px; padding-left: 20px; padding-right: 12px; }
+  .app-trust-card { grid-template-columns: minmax(0,1fr) 104px; gap: 10px; padding-left: 20px; padding-right: 12px; }
   .app-trust-card h3 { font-size: 1.31rem; }
-  .app-device-trust { width: 79px; }
+  .app-device-trust { width: 96px; }
 }
 @media print {
   .app-hero { background: none; box-shadow: none; color: black; min-height: 0; padding: 12px 0; }
