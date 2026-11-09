@@ -14,6 +14,7 @@
   <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
   <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/om-appen.css?v=2">
   <script src="assets/i18n.js" defer></script>
   <title>Om appen – LogeKoll för iPhone och Android</title>
 </head>
@@ -32,141 +33,151 @@
     </nav>
   </header>
 
-  <main id="innehall" class="about-main">
-    <section class="about-hero" aria-labelledby="about-title">
-      <div class="about-hero-copy">
-        <p class="about-kicker" data-i18n="about.hero_kicker">Lär känna LogeKoll</p>
-        <h1 id="about-title"><span data-i18n="about.hero_title_first">Din loge. Dina möten.</span> <span class="hero-title-highlight" data-i18n="about.hero_title_last">Din planering.</span></h1>
-        <p class="about-hero-lead" data-i18n="about.hero_lead">En smidigare väg till svenska Odd Fellow-institutioner, kommande möten och allt du vill ha koll på – samlat i mobilen.</p>
-        <div class="platform-pills" aria-label="Appversioner">
-          <span class="platform-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg> iPhone <strong>1.2</strong></span>
-          <span class="platform-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="4" y="6" width="16" height="14" rx="3"/><path d="M8 3 6.5 5M16 3 17.5 5M9 11h.01M15 11h.01"/></svg> Android <strong>1.2</strong></span>
+  <main id="innehall" class="app-page">
+    <section class="app-hero" aria-labelledby="app-title">
+      <div class="app-hero-copy">
+        <p class="app-eyebrow">Lär känna LogeKoll</p>
+        <h1 id="app-title">Din loge. Dina möten. <em>Din planering.</em></h1>
+        <p class="app-lead">LogeKoll gör det enkelt att hitta svenska Odd Fellow-institutioner, se kommande möten och planera dina besök – direkt i mobilen.</p>
+        <div class="app-version-pills" aria-label="Aktuella appversioner">
+          <span>iPhone <strong>1.2</strong></span><span>Android <strong>1.2</strong></span>
         </div>
-        <div class="actions about-actions">
-          <a href="#funktioner" class="button about-button-primary" data-i18n="about.hero_cta">Utforska funktionerna</a>
-          <a href="support.html" class="button about-button-outline" data-i18n="about.hero_help">Behöver du hjälp?</a>
-        </div>
-      </div>
-      <div class="about-hero-visual" aria-label="Exempel på LogeKolls startsida och kalendervy på iPhone">
-        <span class="hero-orbit hero-orbit-one" aria-hidden="true"></span>
-        <span class="hero-orbit hero-orbit-two" aria-hidden="true"></span>
-        <figure class="phone-mockup phone-hero-back"><img src="assets/screenshots/kalendervy.webp" alt="Kalendervy över kommande möten i LogeKoll" width="900" height="1957" fetchpriority="low"></figure>
-        <figure class="phone-mockup phone-hero-front"><img src="assets/screenshots/startsida.webp" alt="LogeKolls startsida med Min Loge, Mitt Läger och kommande möten" width="900" height="1957" fetchpriority="high"></figure>
-        <div class="hero-floating-note"><span class="floating-note-dot" aria-hidden="true"></span><span data-i18n="about.hero_caption">Utformning från iPhone-versionen</span></div>
-      </div>
-    </section>
-
-    <div class="about-quicknav" aria-label="Genvägar på sidan">
-      <span class="quicknav-label" data-i18n="about.quicknav_label">Upptäck appen</span>
-      <a href="#oversikt" data-i18n="about.quicknav_start">Min startsida</a>
-      <a href="#hitta" data-i18n="about.quicknav_find">Hitta möten</a>
-      <a href="#planera" data-i18n="about.quicknav_plan">Planera</a>
-      <a href="#integritet" data-i18n="about.quicknav_privacy">Trygghet &amp; data</a>
-    </div>
-
-    <section id="funktioner" class="about-intro" aria-labelledby="about-intro-heading">
-      <p class="section-overline" data-i18n="about.intro_kicker">En app med vardagen i fokus</p>
-      <h2 id="about-intro-heading" data-i18n="about.intro_heading">Hitta. Spara. Planera.</h2>
-      <p data-i18n="about.intro_text">Från den egna logens nästa möte till en institution i en annan del av Sverige. LogeKoll hjälper dig att hitta informationen, hålla ordning på möten och förbereda nästa besök.</p>
-      <div class="about-intro-grid">
-        <div><span class="intro-index">01</span><strong data-i18n="about.intro_one_title">Se det som är viktigt</strong><span data-i18n="about.intro_one_text">Dina institutioner och deras kommande möten.</span></div>
-        <div><span class="intro-index">02</span><strong data-i18n="about.intro_two_title">Upptäck mer</strong><span data-i18n="about.intro_two_text">Sök på län, ort eller avstånd från dig.</span></div>
-        <div><span class="intro-index">03</span><strong data-i18n="about.intro_three_title">Ha en egen plan</strong><span data-i18n="about.intro_three_text">Spara möten, använd kalendern och välj påminnelser.</span></div>
-      </div>
-    </section>
-
-    <section id="oversikt" class="story-section" aria-labelledby="overview-title">
-      <div class="story-copy">
-        <p class="section-overline" data-i18n="about.overview_kicker">01 / Personlig överblick</p>
-        <h2 id="overview-title" data-i18n="about.overview_heading">Det viktigaste väntar på startsidan.</h2>
-        <p data-i18n="about.overview_text">Välj Min Loge och, om du vill, Mitt Läger. LogeKoll samlar deras kommande möten direkt på startsidan, med datum, tid och klädsel när uppgifterna finns.</p>
-        <div class="story-points">
-          <div><span class="point-icon" aria-hidden="true">✓</span><p data-i18n="about.overview_point1">Se dina nästa möten i en tydlig lista eller kalendervy.</p></div>
-          <div><span class="point-icon" aria-hidden="true">✓</span><p data-i18n="about.overview_point2">Välj hur sökfunktionerna visas: som lista eller ikoner.</p></div>
-          <div><span class="point-icon" aria-hidden="true">✓</span><p data-i18n="about.overview_point3">Se när mötesdatabasen senast uppdaterades.</p></div>
+        <div class="app-hero-actions">
+          <a href="#funktioner" class="button app-button-gold">Se funktionerna</a>
+          <a href="support.html" class="button app-button-ghost">Få hjälp</a>
         </div>
       </div>
-      <div class="story-art story-art-sand">
-        <figure class="phone-mockup story-phone"><img src="assets/screenshots/kalendervy.webp" alt="LogeKolls startsida i kalendervy" width="900" height="1957" loading="lazy"></figure>
-        <span class="art-label" data-i18n="about.overview_image_label">Din kalender, din överblick</span>
+      <div class="app-hero-visual">
+        <div class="app-hero-halo" aria-hidden="true"></div>
+        <figure class="app-device app-device-hero" aria-label="LogeKolls personliga startsida med Min Loge, Mitt Läger och kommande möten">
+      <img src="assets/screenshots/startsida.webp?v=2" width="900" height="1957" alt="LogeKolls personliga startsida med Min Loge, Mitt Läger och kommande möten" fetchpriority="high" onerror="this.hidden=true">
+    </figure>
+        <span class="app-hero-caption">Skärmbild från iPhone-versionen</span>
       </div>
     </section>
 
-    <section id="hitta" class="story-section story-reverse" aria-labelledby="find-title">
-      <div class="story-copy">
-        <p class="section-overline" data-i18n="about.find_kicker">02 / Upptäck institutioner</p>
-        <h2 id="find-title" data-i18n="about.find_heading">Hemma i din stad. Eller på väg någon annanstans.</h2>
-        <p data-i18n="about.find_text">Sök bland svenska Odd Fellow-institutioner via län och ort, filtrera på Brödra eller Rebecka och skriv ett namn eller nummer om du vet vad du letar efter.</p>
-        <div class="story-points">
-          <div><span class="point-icon" aria-hidden="true">✓</span><p data-i18n="about.find_point1">Hitta närliggande institutioner sorterade efter avstånd.</p></div>
-          <div><span class="point-icon" aria-hidden="true">✓</span><p data-i18n="about.find_point2">Se möten i dag eller i morgon i närheten.</p></div>
-          <div><span class="point-icon" aria-hidden="true">✓</span><p data-i18n="about.find_point3">Öppna besöksadresser i telefonens kartapp.</p></div>
-        </div>
-      </div>
-      <div class="story-art story-art-rose double-art">
-        <figure class="phone-mockup double-phone double-phone-left"><img src="assets/screenshots/omradessokning.webp" alt="Områdessökning efter län, ort och typ av institution" width="900" height="1957" loading="lazy"></figure>
-        <figure class="phone-mockup double-phone double-phone-right"><img src="assets/screenshots/moten-nara-mig.webp" alt="Resultat för möten nära användarens aktuella plats" width="900" height="1957" loading="lazy"></figure>
-      </div>
-    </section>
+    <nav class="app-jumpnav" aria-label="Innehåll på sidan">
+      <span>Upptäck appen</span>
+      <a href="#funktioner">Funktioner</a><a href="#nara-mig">Nära mig</a>
+      <a href="#information">Institutioner</a><a href="#integritet">Integritet</a>
+      <a href="#plattformar">iPhone &amp; Android</a>
+    </nav>
 
-    <section id="planera" class="story-section" aria-labelledby="plan-title">
-      <div class="story-copy">
-        <p class="section-overline" data-i18n="about.plan_kicker">03 / Möten på ditt sätt</p>
-        <h2 id="plan-title" data-i18n="about.plan_heading">Gör nästa möte till en del av din planering.</h2>
-        <p data-i18n="about.plan_text">Spara möten i Mina möten med en svepgest. När du vill kan du förbereda en kalenderhändelse med titel, tid, plats och relevant mötesinformation redan ifylld.</p>
-        <div class="story-points">
-          <div><span class="point-icon" aria-hidden="true">✓</span><p data-i18n="about.plan_point1">Håll dina sparade möten i datumordning.</p></div>
-          <div><span class="point-icon" aria-hidden="true">✓</span><p data-i18n="about.plan_point2">Kontrollera och ändra kalenderuppgifter före du sparar.</p></div>
-          <div><span class="point-icon" aria-hidden="true">✓</span><p data-i18n="about.plan_point3">Aktivera upp till två inställbara lokala påminnelser per sparat möte.</p></div>
-        </div>
+    <section id="funktioner" class="app-section app-features" aria-labelledby="features-title">
+      <div class="app-section-heading">
+        <p class="app-eyebrow">Det viktigaste på ett ställe</p>
+        <h2 id="features-title">Hitta. Spara. Planera.</h2>
+        <p>Från din egen loges nästa möte till besök på annan ort – du har det du behöver nära till hands.</p>
       </div>
-      <div class="story-art story-art-blue">
-        <figure class="phone-mockup story-phone"><img src="assets/screenshots/mina-moten.webp" alt="Mina möten visar sparade möten i datumordning med påminnelseikoner" width="900" height="1957" loading="lazy"></figure>
-        <span class="art-label" data-i18n="about.plan_image_label">Mina möten</span>
-      </div>
-    </section>
-
-    <section class="detail-band" aria-labelledby="detail-title">
-      <div class="detail-band-copy">
-        <p class="section-overline" data-i18n="about.detail_kicker">04 / Allt om institutionen</p>
-        <h2 id="detail-title" data-i18n="about.detail_heading">Rätt uppgifter. På rätt plats.</h2>
-        <p data-i18n="about.detail_text">På institutionens egen sida hittar du namn, kategori, distrikt, säte och län samt kontaktvägar och kommande möten när informationen finns tillgänglig.</p>
-        <div class="detail-tags"><span data-i18n="about.detail_tag1">Besöksadress och karta</span><span data-i18n="about.detail_tag2">Telefon och e-post</span><span data-i18n="about.detail_tag3">Kommande möten</span><span data-i18n="about.detail_tag4">Länk till ursprungskälla</span></div>
-      </div>
-      <figure class="phone-mockup detail-phone"><img src="assets/screenshots/institutionsdetaljer.webp" alt="Institutionsdetaljer med grunduppgifter, besöksadress och kontaktmöjlighet" width="900" height="1957" loading="lazy"></figure>
-    </section>
-
-    <section id="integritet" class="privacy-showcase" aria-labelledby="safety-title">
-      <div class="privacy-showcase-heading">
-        <p class="section-overline" data-i18n="about.safety_kicker">05 / Omtanke om dina uppgifter</p>
-        <h2 id="safety-title" data-i18n="about.safety_heading">Personligt för dig. Privat på din telefon.</h2>
-        <p data-i18n="about.safety_text">LogeKoll kräver inget användarkonto. Du väljer själv när platsen ska användas och kan skydda dina anteckningar med telefonens inbyggda verifiering.</p>
-      </div>
-      <div class="privacy-showcase-grid">
-        <article class="privacy-feature">
-          <div class="privacy-feature-text"><span class="privacy-feature-number">01 /</span><h3 data-i18n="about.notes_heading">Mina anteckningar</h3><p data-i18n="about.notes_text">Skriv egna anteckningar med fet, kursiv och understruken text. Innehållet lagras krypterat och öppnas med biometri eller enhetens kod.</p></div>
-          <figure class="phone-mockup privacy-phone"><img src="assets/screenshots/anteckningar.webp" alt="Privat anteckningsvy med textredigering" width="900" height="1957" loading="lazy"></figure>
+      <div class="app-feature-grid">
+        <article class="app-feature-card" id="oversikt">
+          <div class="app-feature-copy">
+            <span class="app-index">01 / Överblick</span>
+            <h3>Din personliga startsida</h3>
+            <p>Välj Min Loge och Mitt Läger. Se kommande möten med datum, tid och klädsel när uppgifterna finns.</p>
+            <p class="app-small-note">Visa möten i lista eller kalender och se när databasen uppdaterades senast.</p>
+          </div>
+          <figure class="app-device app-device-feature" aria-label="Startsidan i LogeKoll med kalendervy">
+      <img src="assets/screenshots/kalendervy.webp?v=2" width="900" height="1957" alt="Startsidan i LogeKoll med kalendervy" loading="eager" decoding="sync" onerror="this.hidden=true">
+    </figure>
         </article>
-        <article class="privacy-feature">
-          <div class="privacy-feature-text"><span class="privacy-feature-number">02 /</span><h3 data-i18n="about.data_heading">Aktuell information</h3><p data-i18n="about.data_text">Synka mötesdatabasen automatiskt eller manuellt, se senaste uppdateringen och få en varning om informationen blivit för gammal. En lokal kopia kan användas när hämtningen misslyckas.</p></div>
-          <figure class="phone-mockup privacy-phone"><img src="assets/screenshots/installningar.webp" alt="Inställningar för databassynkning och påminnelser i LogeKoll" width="900" height="1957" loading="lazy"></figure>
+        <article class="app-feature-card app-feature-tinted" id="hitta">
+          <div class="app-feature-copy">
+            <span class="app-index">02 / Sök</span>
+            <h3>Hitta rätt institution</h3>
+            <p>Sök efter län, ort, namn eller nummer. Filtrera resultaten på Brödra eller Rebecka.</p>
+            <p class="app-small-note">Öppna institutionens uppgifter direkt från träfflistan.</p>
+          </div>
+          <figure class="app-device app-device-feature" aria-label="Sök efter institutioner via län och ort">
+      <img src="assets/screenshots/omradessokning.webp?v=2" width="900" height="1957" alt="Sök efter institutioner via län och ort" loading="eager" decoding="sync" onerror="this.hidden=true">
+    </figure>
+        </article>
+        <article class="app-feature-card app-feature-cool" id="planera">
+          <div class="app-feature-copy">
+            <span class="app-index">03 / Planera</span>
+            <h3>Ha koll på dina möten</h3>
+            <p>Spara intressanta möten och förbered kalenderhändelser med titel, plats och tid ifyllda.</p>
+            <p class="app-small-note">Välj upp till två lokala påminnelser för varje sparat möte.</p>
+          </div>
+          <figure class="app-device app-device-feature" aria-label="Mina möten i LogeKoll med sparade möten och påminnelser">
+      <img src="assets/screenshots/mina-moten.webp?v=2" width="900" height="1957" alt="Mina möten i LogeKoll med sparade möten och påminnelser" loading="eager" decoding="sync" onerror="this.hidden=true">
+    </figure>
         </article>
       </div>
-      <p class="privacy-showcase-footnote"><span data-i18n="about.safety_footnote">Platsåtkomst begärs först när du själv startar en Nära mig-sökning. Läs mer om hanteringen av dina uppgifter i</span> <a href="integritet.html" data-i18n="about.safety_link">integritetspolicyn</a>.</p>
     </section>
 
-    <section class="platform-section" aria-labelledby="platform-title">
-      <div class="section-head"><p class="section-overline" data-i18n="about.platform_kicker">Två plattformar · samma idé</p><h2 id="platform-title" data-i18n="about.platform_heading">LogeKoll för iPhone och Android.</h2><p data-i18n="about.platform_text">De centrala verktygen för institutioner, möten och planering finns på båda plattformarna. Systemintegrerade genvägar kan fungera olika.</p></div>
-      <div class="platform-grid">
-        <article class="platform-card"><div class="platform-topline"><h3>iPhone</h3><span>Version 1.2</span></div><p data-i18n="about.iphone_text">Sök institutioner och kommande möten även med Siri och appen Genvägar när funktionen är aktiverad.</p></article>
-        <article class="platform-card"><div class="platform-topline"><h3>Android</h3><span>Version 1.2</span></div><p data-i18n="about.android_text">På Android finns appgenvägen Snabbsökning för institutioner och kommande möten. Utformningen kan skilja sig från iPhone.</p></article>
+    <section id="nara-mig" class="app-highlight app-highlight-wine" aria-labelledby="nearby-title">
+      <div class="app-highlight-copy">
+        <p class="app-eyebrow">04 / På resan</p>
+        <h2 id="nearby-title">Se vad som finns nära dig.</h2>
+        <p>Med din tillåtelse visar LogeKoll institutioner sorterade efter avstånd. Du kan också söka efter möten som äger rum <strong>i dag eller i morgon</strong> nära din aktuella position.</p>
+        <p class="app-small-note">Platsåtkomst begärs först när du själv startar en Nära mig-sökning.</p>
       </div>
-      <p class="screen-note" data-i18n="about.screen_note">Skärmbilderna är från iPhone och visar exempel på appens funktioner. Gränssnitt och systemfunktioner kan skilja sig på Android.</p>
+      <div class="app-highlight-media">
+        <figure class="app-device app-device-spotlight" aria-label="Möten nära användarens plats, sorterade efter avstånd">
+      <img src="assets/screenshots/moten-nara-mig.webp?v=2" width="900" height="1957" alt="Möten nära användarens plats, sorterade efter avstånd" loading="eager" decoding="sync" onerror="this.hidden=true">
+    </figure>
+      </div>
     </section>
 
-    <section class="about-end-cta" aria-labelledby="end-title">
-      <div><p class="section-overline" data-i18n="about.end_kicker">Börja med din loge</p><h2 id="end-title" data-i18n="about.end_heading">Redo att få bättre koll?</h2><p data-i18n="about.end_text">Välj medlemstyp, ange Min Loge och låt LogeKoll samla mötena på ett ställe. Behöver du vägledning finns hjälpen nära.</p></div>
-      <a class="button primary" href="support.html" data-i18n="about.end_cta">Så kommer du igång</a>
+    <section id="information" class="app-highlight app-highlight-light" aria-labelledby="institution-title">
+      <div class="app-highlight-copy">
+        <p class="app-eyebrow">05 / Institutionsinformation</p>
+        <h2 id="institution-title">Allt om institutionen. Samlat.</h2>
+        <p>Se namn, kategori, distrikt, säte och län. När uppgifterna finns kan du öppna besöksadressen i kartan, ringa, skicka e-post eller gå till ursprungskällan.</p>
+        <div class="app-keywords"><span>Besöksadress</span><span>Kontaktvägar</span><span>Kommande möten</span></div>
+      </div>
+      <div class="app-highlight-media">
+        <figure class="app-device app-device-spotlight" aria-label="Institutionsinformation med kontaktvägar och kommande möten">
+      <img src="assets/screenshots/institutionsdetaljer.webp?v=2" width="900" height="1957" alt="Institutionsinformation med kontaktvägar och kommande möten" loading="eager" decoding="sync" onerror="this.hidden=true">
+    </figure>
+      </div>
+    </section>
+
+    <section id="integritet" class="app-section app-trust" aria-labelledby="trust-title">
+      <div class="app-section-heading">
+        <p class="app-eyebrow">Personligt och genomtänkt</p>
+        <h2 id="trust-title">Din information. I dina händer.</h2>
+        <p>LogeKoll kräver inget användarkonto. Dina val och sparade mötesreferenser hanteras lokalt i appen.</p>
+      </div>
+      <div class="app-trust-grid">
+        <article class="app-trust-card">
+          <div class="app-trust-copy">
+            <h3>Privata anteckningar</h3>
+            <p>Skriv med fet, kursiv eller understruken text. Anteckningar lagras krypterat och skyddas med telefonens inbyggda verifiering.</p>
+          </div>
+          <figure class="app-device app-device-trust" aria-label="LogeKolls skyddade anteckningar">
+      <img src="assets/screenshots/anteckningar.webp?v=2" width="900" height="1957" alt="LogeKolls skyddade anteckningar" loading="eager" decoding="sync" onerror="this.hidden=true">
+    </figure>
+        </article>
+        <article class="app-trust-card app-trust-cool">
+          <div class="app-trust-copy">
+            <h3>Uppdaterad mötesdata</h3>
+            <p>Synka automatiskt eller manuellt, se senaste uppdateringen och få en varning om databasen är gammal. En lokal kopia kan användas vid nätverksproblem.</p>
+          </div>
+          <figure class="app-device app-device-trust" aria-label="Inställningar för synkning av mötesdatabasen">
+      <img src="assets/screenshots/installningar.webp?v=2" width="900" height="1957" alt="Inställningar för synkning av mötesdatabasen" loading="eager" decoding="sync" onerror="this.hidden=true">
+    </figure>
+        </article>
+      </div>
+      <p class="app-trust-foot">Läs om position, lokal lagring och övrig datahantering i <a href="integritet.html">integritetspolicyn</a>.</p>
+    </section>
+
+    <section id="plattformar" class="app-section app-platforms" aria-labelledby="platforms-title">
+      <div class="app-section-heading app-heading-left">
+        <p class="app-eyebrow">Två plattformar · samma grundidé</p>
+        <h2 id="platforms-title">LogeKoll för iPhone och Android</h2>
+      </div>
+      <div class="app-platform-grid">
+        <article class="app-platform-card"><div><h3>iPhone</h3><strong>Version 1.2</strong></div><p>Hitta institutioner och möten med Siri och Genvägar när funktionen är aktiverad.</p></article>
+        <article class="app-platform-card"><div><h3>Android</h3><strong>Version 1.2</strong></div><p>Snabbsökning finns via en appgenväg. Systemfunktioner och utseende kan skilja sig från iPhone.</p></article>
+      </div>
+      <p class="app-screen-footnote">Bilderna visar iPhone-versionen. Detaljer i gränssnittet kan se annorlunda ut på Android.</p>
+    </section>
+
+    <section class="app-final" aria-labelledby="final-title">
+      <div><p class="app-eyebrow">Kom igång med LogeKoll</p><h2 id="final-title">Redo att få bättre koll?</h2><p>Välj medlemstyp och Min Loge, så samlas dina möten på ett ställe.</p></div>
+      <a class="button primary" href="support.html">Så kommer du igång</a>
     </section>
   </main>
 
